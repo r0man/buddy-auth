@@ -613,7 +613,7 @@ vector on your <strong><em>project.clj</em></strong> file:</p>
 <div class="paragraph">
 <p>Buddy differs with other libraries because it takes very different approach for handling
 authentication. Firstly, it clearly splits authentication and authorization in two
-separate steps. Secondly, it implements these concerns using &#8220;backends&#8221; and protocols for ease of
+separate steps. Secondly, it implements these concepts using protocols for easy
 extensibility.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
@@ -794,7 +794,7 @@ the use of tokens.</p>
 <p>It parses a token header instead of http basic and passes it to <em>authfn</em> for authentication.</p>
 </div>
 <div class="paragraph">
-<p>Let us see an example:</p>
+<p>Let see an example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -830,6 +830,9 @@ or nil.</p>
 <p>If you are so inclined, you may use a different name for your token, using the <strong>token-name</strong> optional
 key when defining your backend.</p>
 </div>
+<div class="paragraph">
+<p>You can see a complete example of using this backend <a href="https://github.com/funcool/buddy-auth/tree/master/examples/token">here</a> (also with authorization).</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_jws_token_stateless"><a class="link" href="#_jws_token_stateless">4.4. Jws Token (Stateless)</a></h3>
@@ -854,6 +857,9 @@ concretely: JWS/JWT.</p>
 <p><a href="http://www.niwi.be/2014/06/07/stateless-authentication-with-api-rest/" class="bare">http://www.niwi.be/2014/06/07/stateless-authentication-with-api-rest/</a></p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>You can see a complete example of using this backend <a href="https://github.com/funcool/buddy-auth/tree/master/examples/token-jws">here</a> (also with authorization).</p>
 </div>
 </div>
 </div>
@@ -1275,7 +1281,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-03-14 16:51:40 CET
+Last updated 2015-03-14 19:51:26 CET
 </div>
 </div>
 </body>
